@@ -1,96 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+    <title>My News Feed</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item Home">
+                    <a href="#"><img src="images/Home.svg" alt="Home"></a>
+                    <p>Logo</p>
+                </li>
+                <li class="nav-item News">
+                    <a href="#"><img src="images/News.svg" alt="News"></a>
+                </li>
+                <li class="nav-item Messages">
+                    <a href="#"><img src="images/messages.svg" alt="Messages"></a>
+                </li>
+                <li class="nav-item Account">
+                    <a href="#"><img src="images/Account.svg" alt="Account Settings"></a>
+                </li>
+                <li class="nav-item Notification">
+                    <a href="#"><img src="images/notification.svg" alt="Notification"></a>
+                </li>
+                <li class="nav-item Profile">
+                    <a href="#"> <img src="images/avatar2.png" alt="Profile"></a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <div class="left-container">
+                <div class="profile-card">
+                    <p class="my-profile">My Profile</p>
+                    <img src="images/avatar3.png" alt="Profile Picture">
+                    <hr>
+                    <div class="stats">
+                        <p>
+                            <img src="images/pencil_logo.png" alt="pencil logo">
+                            <span>Designer, UI</span>
+                        </p>
+                        <p>
+                            <img src="images/house_logo.png" alt="Home">
+                            CDO, PH
+                        </p>
+                        <p>
+                            <img src="images/cake.png" alt="Birthday">
+                            January 24, 2002
+                        </p>
+                    </div>
+                </div>
+
+                <div class="me">
+                    <ul>
+                        <li><a href="#" ></a>
+                            <img src="images/my_group.png" alt="group">
+                            My Groups
+                        </li>
+                        <li>
+                            <a href="#" ></a>
+                            <img src="images/my_event_logo.png" alt="events">
+                            My Events
+                        </li>
+                        <li>
+                            <a href="#" ></a>
+                            <img src="images/my_photos.png" alt="photos">
+                            My Photos
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="interests">
+                    <p class="title">Interests</p>
+                    <p>
+                        <span class="news">News</span>
+                        <span class="code">Coding</span>
+                        <span class="games">Games</span>
+                        <span class="friends">Friends</span>
+                        <span class="labels">Labels</span>
+                        <span class="design">Design</span>
+                        <span class="art">Art</span>
+                        <span class="photo">Photos</span>
+                        <span class="food">Food</span>
+                    </p>
+                </div>
+
+                <!--<div class="alert-box">
+                    <p class="hey">
+                        <b>Hey!</b></p>
+                    <p>People are looking at your profile. Find out who.</p>
+                </div> -->
+
+                <div class="alertbox">
+                    <div>
+                        <h3>Hey!</h3>
+                        <button class="close-button">&times;</button>
+                    </div>
+                    <div class="message">
+                        <p>People are looking at your Profile. Find out who.</p>
+                    </div>
+                </div>
+
+
+        </div>
+
+        <div class="mid-container">
+            <div class="post">
+                <p>Social Media</p>
+                <div class="status">
+                    <input type="text" placeholder="Status: Feeling Blue">
+                </div>
+                <div class="post-button">
+                    <img src="images/post_logo.png" alt="post_logo">
+                    <span>Post</span>
+                </div>
+            </div>
+
+            <div class="feed1">
+                <div class="profile-details">
+                    <img src="images/avatar2.png" alt="profile picture">
+                    <p>John Doe</p>
+                    <p id="time">1 min ago</p>
+                </div>
+                <div class="caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="post-img">
+                    <img src="images/lights.jpg" alt="lights">
+                    <img src="images/nature.jpg" alt="nature">
+                </div>
+                <div class="react-buttons">
+                    <button class="like-button">
+                        <img src="images/like_logo.png" alt="like_logo">
+                        Like
+                    </button>
+                    <button class="comment-button">
+                        <img src="images/comment_logo.png" alt="comment_logo">
+                        Comment
+                    </button>
+                </div>
+            </div>
+            <div class="feed2">
+                <div class="profile-details">
+                    <img src="images/avatar5.png" alt="profile2">
+                    <p>Jane Doe</p>
+                    <p id="time">20 mins ago</p>
+                </div>
+                <div class="caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="react-buttons">
+                    <button class="like-button">
+                        <img src="images/like_logo.png" alt="like_logo">
+                        Like
+                    </button>
+                    <button class="comment-button">
+                        <img src="images/comment_logo.png" alt="comment_logo">
+                        Comment
+                    </button>
+                </div>
+            </div>
+            <div class="feed3">
+                <div class="profile-details">
+                    <img src="images/avatar6.png" alt="profile1">
+                    <p>Angie Jane</p>
+                    <p id="time">1 hr ago</p>
+                </div>
+                <div class="caption">
+                <p>Have you seen this?</p>
+                </div>
+                <div class="post-img-feed3">
+                    <img src="images/nature.jpg" alt="nature">
+                </div>
+                <div class="caption-bottom">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                <div class="react-buttons">
+                    <button class="like-button">
+                        <img src="images/like_logo.png" alt="like_logo">
+                        Like
+                    </button>
+                    <button class="comment-button">
+                        <img src="images/comment_logo.png" alt="comment_logo">
+                        Comment
+                    </button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="right-container">
+            <div class="upcoming-events">
+                <p>Upcoming Events: </p>
+                <img src="images/forest.jpg" alt="snow">
+                <p style="font-weight: bold;">Holiday</p>
+                <p>Friday 15:00</p>
+                <button> Info </button>
+            </div>
+            <div class="friend-req">
+                <p class="header">Friend Request</p>
+                <img src="images/avatar6.png" alt="profile1">
+                <p>Jane Doe</p>
+                <div class="button-container">
+                    <button class="confirm-button">
+                        <img src="images/confirm_logo.png" alt="confirm_logo">
+                    </button>
+                    <button class="cancel-button">
+                        <img src="images/cancel_logo.png" alt="cancel_logo">
+                    </button>
+                </div>
+            </div>
+            <div class="ad">
+                <p>ADS</p>
+            </div>
+            <div class="bug">
+                <img src="images/bug_logo.png" alt="bug_logo">
+            </div>
+        </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <p>
+                Footer
+            </p>
+        </div>
+        <div class="footer2">
+            <p>
+            Powered by
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
 </html>
